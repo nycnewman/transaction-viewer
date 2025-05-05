@@ -1,0 +1,13 @@
+.node__root > circle {
+    fill: blue;
+}
+
+.node__branch > circle {
+    fill: teal;
+}
+
+.node__leaf > circle {
+    fill: green;
+    /* Let's also make the radius of leaf nodes larger */
+    r: 25;
+}

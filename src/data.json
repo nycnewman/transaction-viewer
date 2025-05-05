@@ -1,0 +1,362 @@
+{
+  "transaction": {
+    "version": "2.1",
+    "roots": [
+      "0",
+      "3"
+    ],
+    "nodes": [
+      {
+        "nodeId": "1",
+        "v1": {
+          "create": {
+            "lfVersion": "2.1",
+            "contractId": "006b0ea2da959444ee215c097b595204a4a6604afc94b28b4e19443777a292f3d1",
+            "packageName": "splice-amulet",
+            "templateId": {
+              "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+              "moduleName": "Splice.Amulet",
+              "entityName": "ValidatorRight"
+            },
+            "argument": {
+              "record": {
+                "recordId": {
+                  "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+                  "moduleName": "Splice.Amulet",
+                  "entityName": "ValidatorRight"
+                },
+                "fields": [
+                  {
+                    "label": "dso",
+                    "value": {
+                      "party": "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835"
+                    }
+                  },
+                  {
+                    "label": "user",
+                    "value": {
+                      "party": "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3"
+                    }
+                  },
+                  {
+                    "label": "validator",
+                    "value": {
+                      "party": "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+                    }
+                  }
+                ]
+              }
+            },
+            "signatories": [
+              "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3",
+              "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+            ],
+            "stakeholders": [
+              "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3",
+              "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+            ]
+          }
+        }
+      },
+      {
+        "nodeId": "2",
+        "v1": {
+          "create": {
+            "lfVersion": "2.1",
+            "contractId": "00decb4f9fc25ace0f1e849b2a315e79a394f4b7396fb053cc45e15fdc02dd7ebb",
+            "packageName": "splice-amulet",
+            "templateId": {
+              "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+              "moduleName": "Splice.AmuletRules",
+              "entityName": "TransferPreapproval"
+            },
+            "argument": {
+              "record": {
+                "recordId": {
+                  "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+                  "moduleName": "Splice.AmuletRules",
+                  "entityName": "TransferPreapproval"
+                },
+                "fields": [
+                  {
+                    "label": "dso",
+                    "value": {
+                      "party": "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835"
+                    }
+                  },
+                  {
+                    "label": "receiver",
+                    "value": {
+                      "party": "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3"
+                    }
+                  },
+                  {
+                    "label": "provider",
+                    "value": {
+                      "party": "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+                    }
+                  },
+                  {
+                    "label": "validFrom",
+                    "value": {
+                      "timestamp": "1736845701853135"
+                    }
+                  },
+                  {
+                    "label": "lastRenewedAt",
+                    "value": {
+                      "timestamp": "1736845701853135"
+                    }
+                  },
+                  {
+                    "label": "expiresAt",
+                    "value": {
+                      "timestamp": "1744621701742418"
+                    }
+                  }
+                ]
+              }
+            },
+            "signatories": [
+              "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835",
+              "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3",
+              "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+            ],
+            "stakeholders": [
+              "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835",
+              "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3",
+              "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+            ]
+          }
+        }
+      },
+      {
+        "nodeId": "0",
+        "v1": {
+          "exercise": {
+            "lfVersion": "2.1",
+            "contractId": "00328ceff793d0a66ecc8d82b2218bfa323276d82fafdac0e23c678ba32d3515baca101220fb8c2defbdcc7cced28b0668e1e75cff83372f086fae26e4cd3554eb6d4ac5b7",
+            "packageName": "splice-amulet",
+            "templateId": {
+              "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+              "moduleName": "Splice.AmuletRules",
+              "entityName": "ExternalPartySetupProposal"
+            },
+            "signatories": [
+              "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835",
+              "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+            ],
+            "stakeholders": [
+              "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835",
+              "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3",
+              "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+            ],
+            "actingParties": [
+              "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3"
+            ],
+            "choiceId": "ExternalPartySetupProposal_Accept",
+            "chosenValue": {
+              "record": {
+                "recordId": {
+                  "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+                  "moduleName": "Splice.AmuletRules",
+                  "entityName": "ExternalPartySetupProposal_Accept"
+                }
+              }
+            },
+            "consuming": true,
+            "children": [
+              "1",
+              "2"
+            ],
+            "exerciseResult": {
+              "record": {
+                "recordId": {
+                  "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+                  "moduleName": "Splice.AmuletRules",
+                  "entityName": "ExternalPartySetupProposal_AcceptResult"
+                },
+                "fields": [
+                  {
+                    "label": "validatorRightCid",
+                    "value": {
+                      "contractId": "006b0ea2da959444ee215c097b595204a4a6604afc94b28b4e19443777a292f3d1"
+                    }
+                  },
+                  {
+                    "label": "transferPreapprovalCid",
+                    "value": {
+                      "contractId": "00decb4f9fc25ace0f1e849b2a315e79a394f4b7396fb053cc45e15fdc02dd7ebb"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "nodeId": "3",
+        "v1": {
+          "create": {
+            "lfVersion": "2.1",
+            "contractId": "00decb4f9fc25ace0f1e849b2a315e79a394f4b7396fb053cc45e15fdc02dd7ebb",
+            "packageName": "splice-amulet",
+            "templateId": {
+              "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+              "moduleName": "Splice.AmuletRules",
+              "entityName": "TransferPreapproval"
+            },
+            "argument": {
+              "record": {
+                "recordId": {
+                  "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+                  "moduleName": "Splice.AmuletRules",
+                  "entityName": "TransferPreapproval"
+                },
+                "fields": [
+                  {
+                    "label": "dso",
+                    "value": {
+                      "party": "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835"
+                    }
+                  },
+                  {
+                    "label": "receiver",
+                    "value": {
+                      "party": "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3"
+                    }
+                  },
+                  {
+                    "label": "provider",
+                    "value": {
+                      "party": "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+                    }
+                  },
+                  {
+                    "label": "validFrom",
+                    "value": {
+                      "timestamp": "1736845701853135"
+                    }
+                  },
+                  {
+                    "label": "lastRenewedAt",
+                    "value": {
+                      "timestamp": "1736845701853135"
+                    }
+                  },
+                  {
+                    "label": "expiresAt",
+                    "value": {
+                      "timestamp": "1744621701742418"
+                    }
+                  }
+                ]
+              }
+            },
+            "signatories": [
+              "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835",
+              "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3",
+              "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+            ],
+            "stakeholders": [
+              "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835",
+              "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3",
+              "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+            ]
+          }
+        }
+      }
+    ],
+    "nodeSeeds": [
+      {
+        "seed": "SFr3JHVDNPu8MLlPobHUUEGMuu6XXvgfq0Wx9vmycEI="
+      },
+      {
+        "nodeId": 1,
+        "seed": "QTeS8JTPo6122WXeHT2tljnkplK0eSUqKr61STM78mk="
+      },
+      {
+        "nodeId": 2,
+        "seed": "N45FLIfaKj8vV6chCNdv5hj0y9guRtAWqrnkRCkjSJE="
+      }
+    ]
+  },
+  "metadata": {
+    "submitterInfo": {
+      "actAs": [
+        "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3"
+      ],
+      "commandId": "a6fece46-fe5b-4412-b065-a426416abbec"
+    },
+    "domainId": "global-domain::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835",
+    "transactionUuid": "8b3c8f7e-b699-4649-b197-2fef882a9d3e",
+    "submissionTime": "1736845704080212",
+    "disclosedEvents": [
+      {
+        "v1": {
+          "lfVersion": "2.1",
+          "contractId": "00328ceff793d0a66ecc8d82b2218bfa323276d82fafdac0e23c678ba32d3515baca101220fb8c2defbdcc7cced28b0668e1e75cff83372f086fae26e4cd3554eb6d4ac5b7",
+          "packageName": "splice-amulet",
+          "templateId": {
+            "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+            "moduleName": "Splice.AmuletRules",
+            "entityName": "ExternalPartySetupProposal"
+          },
+          "argument": {
+            "record": {
+              "recordId": {
+                "packageId": "979ec710c3ae3a05cb44edf8461a9b4d7dd2053add95664f94fc89e5f18df80f",
+                "moduleName": "Splice.AmuletRules",
+                "entityName": "ExternalPartySetupProposal"
+              },
+              "fields": [
+                {
+                  "label": "validator",
+                  "value": {
+                    "party": "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+                  }
+                },
+                {
+                  "label": "user",
+                  "value": {
+                    "party": "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3"
+                  }
+                },
+                {
+                  "label": "dso",
+                  "value": {
+                    "party": "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835"
+                  }
+                },
+                {
+                  "label": "createdAt",
+                  "value": {
+                    "timestamp": "1736845701853135"
+                  }
+                },
+                {
+                  "label": "preapprovalExpiresAt",
+                  "value": {
+                    "timestamp": "1744621701742418"
+                  }
+                }
+              ]
+            }
+          },
+          "signatories": [
+            "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835",
+            "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+          ],
+          "stakeholders": [
+            "DSO::1220996ad1689441b48226cfb4ed6516c5a82aa063361a526e38ea00fb1040cc9835",
+            "testuser::12202d4beaddaf76913583cbfda31ed9346d6c1f21b69e90bd02de1e356cb8b344f3",
+            "quickstart-test-1::12201666b86a7d460dd3d54bc9f7cb39038389db450a4d600c4530c6fe740d711789"
+          ]
+        },
+        "createdAt": "1736845701853135",
+        "driverMetadata": "CiYKJAgBEiCNvELG5LW+1JMd6ndw1uwjYi5OM7/oVRqthfvNmkIyCRAe"
+      }
+    ]
+  }
+}

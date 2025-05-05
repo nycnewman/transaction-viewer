@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.App-json-input {
+  width: 500px;
+  height: 100px;
+}
+
+.box-with-outline {
+  border: 2px solid gray;
+  padding: 10px;
+  width: fit-content;
+}
+
+.time-display {
+  color: #0000FF;
+}
+
+.entry-value {
+  color: #28a745;
+  margin-left: 8px; /* Only applies when there IS an entry-name */
+  font-style: italic;
+}
+
+
